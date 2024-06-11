@@ -98,7 +98,6 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background: var(--primary-color);
     width: 85vw;
     padding: .5em .5em 0 .5em;
     background: linear-gradient(to bottom, rgb(93 23 191/1), rgb(93 23 191/.7)),url("../img/texto-fondo2.png");
@@ -178,18 +177,20 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    border: 1px solid black;
-    border-radius: 20px;
     width: 85vw;
     padding: .5em;
+    margin: 10em 7em 0;
 }
 
 .servicios h2{
+    font-size: 2.5em ;
     width: 100vw;
+    margin: 0;
 }
 
 .servicios p{
-
+    color: var(--font-color);
+    font-size: 1.2em;
 }
 
 .cajas-servicios{
@@ -204,9 +205,23 @@ main{
     padding: 2em;
     margin: 2em;
     border-radius: 15px;
+    transition: .5s background-color, .5s box-shadow, .5s color;
+}
+
+.serv i{
+    font-size: 2.5em;
+}
+ 
+.serv h3{
+   margin: 1.5em 0 0;
+   font-size: 1.5em;
 }
 
 .serv:hover{
     background-color: var(--primary-color);
     box-shadow: 0 0 .5em black;
+    color: var(--font-white);
+
 }
+
+
