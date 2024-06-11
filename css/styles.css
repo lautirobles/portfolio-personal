@@ -1,0 +1,78 @@
+@font-face {
+
+    font-family: helvetica-neue;
+    
+    src: url(../fonts/HelveticaNeueBoldCondensed.ttf)
+    
+    }
+
+:root{
+    --primary-color: #5D17BF;
+    --font-color: #ACA4B4;
+}
+
+*{
+    font-family: helvetica-neue;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    padding: .5em;
+    border-radius: 20px;
+    margin: 30px 0;
+    background-color: var(--primary-color);
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav .centro{ 
+    /* position: relative;
+    top: 0;
+    left: 25%; */
+    margin: 0 25px;
+    transition: .3s text-decoration-line, .3s color;
+}
+
+nav .centro:hover{
+    color: #fcfcfc;
+    text-decoration-line: underline;
+}
+nav .derecha{
+    background-color: #fcfcfc;
+    color: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 18%;
+    transition: .5s border;
+}
+
+nav .derecha:hover{
+    border: 1px solid black;
+}
+
+header img{
+    position: relative;
+    left: 10px;
+}
