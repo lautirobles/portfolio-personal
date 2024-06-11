@@ -7,8 +7,9 @@
     }
 
 :root{
-    --primary-color: #5D17BF;
+    --primary-color: #5d17bf;
     --font-color: #ACA4B4;
+    --font-white: #fcfcfc;
 }
 
 *{
@@ -20,21 +21,24 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: var(--font-white);
 }
 
+
+/* COMIENZA LA PERSONALIZACION DEL HEADER */
 header{
     display: flex;
     align-items: center;
-    width: 85%;
+    width: 85vw;
     padding: .5em;
     border-radius: 20px;
-    margin: 30px 0;
+    margin: 1.5em 0;
     background-color: var(--primary-color);
     
 }
 
 nav{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,13 +53,15 @@ nav .centro{
     /* position: relative;
     top: 0;
     left: 25%; */
-    margin: 0 25px;
+    margin: 0 1.3em;
     transition: .3s text-decoration-line, .3s color;
 }
 
 nav .centro:hover{
-    color: #fcfcfc;
-    text-decoration-line: underline;
+    color: var(--font-white);
+    /* text-decoration-line: underline; */
+    border-bottom: 2px solid var(--font-white);
+    padding-bottom: 5px;
 }
 nav .derecha{
     background-color: #fcfcfc;
@@ -65,14 +71,142 @@ nav .derecha{
     position: relative;
     top: 0;
     left: 18%;
-    transition: .5s border;
+    transition: .3s border;
 }
 
 nav .derecha:hover{
-    border: 1px solid black;
+    border: 1.5px solid black;
 }
 
 header img{
     position: relative;
     left: 10px;
+}
+/* FINALIZA LA PERSONALIZACION DEL HEADER */
+
+/* INICIA LA PERSONALIZACION DEL HERO */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--primary-color);
+    width: 85vw;
+    padding: .5em .5em 0 .5em;
+    background: linear-gradient(to bottom, rgb(93 23 191/1), rgb(93 23 191/.7)),url("../img/texto-fondo2.png");
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 3.5em;
+    color: var(--font-white);
+    margin: 0.5em 0;
+}
+
+.hero span{
+    color: #f2b807;
+}
+
+.redes{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a{
+    margin: 0 .5em;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #7a35c4;
+    color: var(--font-color);
+}
+
+.hero img{
+    margin: 1em 0 0 0;
+    filter: drop-shadow(0 0 .75rem var(--font-white));
+}
+
+.hero .caja1{
+    text-align: center;
+    color: var(--font-white);
+    width: 8vw;
+    height: 8vh;
+    font-size: 1.3em;
+    line-height: 120%;
+    padding: 1em;
+    background: #8647c9;
+    border-radius: 10px;
+    box-shadow: -1px -1px 1px var(--font-white);
+    rotate: 345deg;
+    position: absolute;
+    bottom: 0;
+    left: 20vw;
+}
+
+.hero .caja2{
+    text-align: center;
+    color: var(--font-white);
+    width: 8vw;
+    height: 8vh;
+    font-size: 1.3em;
+    line-height: 120%;
+    padding: 1em;
+    background: #8647c9;
+    border-radius: 10px;
+    box-shadow: -1px -1px 1px var(--font-white);
+    rotate: 15deg;
+    position: absolute;
+    bottom: 35vh;
+    right: 20vw;
+    
+}
+/* FIN DEL HERO */
+
+
+/* INICIO DE SERVICES */
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 85vw;
+    padding: .5em;
+}
+
+.servicios h2{
+    width: 100vw;
+}
+
+.servicios p{
+
+}
+
+.cajas-servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.serv{
+    flex: 1;
+    height: 30vh;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 15px;
+}
+
+.serv:hover{
+    background-color: var(--primary-color);
+    box-shadow: 0 0 .5em black;
 }
