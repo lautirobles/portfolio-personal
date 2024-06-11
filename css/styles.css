@@ -44,7 +44,6 @@ nav{
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 nav a{
@@ -53,16 +52,12 @@ nav a{
     font-size: 1.2em;
 }
 nav .centro{ 
-    /* position: relative;
-    top: 0;
-    left: 25%; */
-    margin: 0 1.3em;
-    transition: .3s text-decoration-line, .3s color;
+    margin: .5em 1.3em 0 1.3em;
+    transition: .3s border-bottom, .3s padding-bottom, .3s color;
 }
 
 nav .centro:hover{
     color: var(--font-white);
-    /* text-decoration-line: underline; */
     border-bottom: 2px solid var(--font-white);
     padding-bottom: 5px;
 }
@@ -456,3 +451,61 @@ main{
 /* FIN PROYECTOS */
 
 /* INICIO CONTACTO */
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin: 0 0 10em 0;
+}
+
+.contacto h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.contacto p{
+    color: var(--font-color);
+}
+
+.contacto form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form input{
+    width: 40%;
+    height: 5vh;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--font-color);
+}
+
+.detail-project{
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    margin: 10px;
+    width: 40%;
+    height: 20vh;
+    resize: none;
+}
+
+.bot-enviar{
+    text-decoration: none;
+    color: var(--font-white);
+    padding: .8em 1.2em;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    position: relative;
+    left: 31.5vw;
+}
+
+.bot-enviar:hover{
+    border: 1px solid black;
+}
+
