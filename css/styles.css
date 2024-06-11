@@ -339,3 +339,120 @@ main{
     width: 100%;
     text-align: center;
 }
+/* FIN ACERCA DE */
+
+/* INICIO PROYECTOS */
+.proyectos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 10em 0;
+    padding: .5em;
+}
+
+.proyectos h2{
+    width: 100%;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+
+.proyectos p{
+    width: 100%;
+    text-align: center;
+    color: var(--font-color);
+}
+
+.proyectos .botones{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.botones a{
+    padding: .5em;
+    margin: 1em;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--font-color);
+    transition: .5s background-color, .5s color;
+}
+
+.botones a:hover{
+    color: var(--font-white);
+    background-color: var(--primary-color);
+}
+
+.proyec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.proyec a{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.proyec-1{
+    flex: 1;
+    height: 50vh;
+    background-image: url("../img/proyec-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.proyec-1:hover{
+    background-image: linear-gradient(rgb(93 23 191/.5), rgb(93 23 191/.5)) , url("../img/proyec-1.png");
+}
+
+.proyec-2{
+    flex: 1;
+    height: 50vh;
+    background-image: url("../img/proyec-2.png");
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.proyec-2:hover{
+    background-image: linear-gradient(rgb(93 23 191/.5), rgb(93 23 191/.5)) , url("../img/proyec-2.png");
+}
+
+.proyec-3{
+    flex: 1;
+    height: 50vh;
+    background-image: url("../img/proyec-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.proyec-3:hover{
+    background-image: linear-gradient(rgb(93 23 191/.5), rgb(93 23 191/.5)) , url("../img/proyec-3.png");
+}
+
+.most-mas{
+    padding: .5em 1em;
+    margin: 1em;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--font-color);
+    transition: .5s background-color, .5s color;
+}
+
+.most-mas:hover{
+    color: var(--font-white);
+    background-color: var(--primary-color);
+}
+/* FIN PROYECTOS */
+
+/* INICIO CONTACTO */
