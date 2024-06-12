@@ -10,19 +10,19 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="http://via.placeholder.com/50" alt="Logo">
+        <img class="logo" src="img/logo2.png" alt="Logo">
         <nav>
-            <a href="" class="centro">Inicio</a>
-            <a href="" class="centro">Servicios</a>
-            <a href="" class="centro">Sobre mi</a>
-            <a href="" class="centro">Proyectos</a>
-            <a href="" class="centro">Contacto</a>
+            <a href="#inicio" class="centro">Inicio</a>
+            <a href="#servicios" class="centro">Servicios</a>
+            <a href="#acerca" class="centro">Sobre mi</a>
+            <a href="#proyectos" class="centro">Proyectos</a>
+            <a href="#contacto" class="centro">Contacto</a>
             <a href="" class="derecha">Contratame</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="inicio" class="hero">
             <h1>Hola, soy <span>Lautaro Robles</span></h1>
             <div class="redes">
                 <a href="https://www.instagram.com/laurobles03" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -34,7 +34,7 @@
             <div class="caja2">3 proyectos realizados</div>
         </section>
 
-        <section class="servicios">
+        <section id="servicios" class="servicios">
             <h2>Servicios</h2>
             <p>Actualmente, estos son los servicios en los que trabajo en cuanto a desarrollo de software.</p>
             <div class="cajas-servicios">
@@ -56,7 +56,7 @@
             </div>    
         </section>
 
-        <section class="acerca">
+        <section id="acerca" class="acerca">
             <div class="cont-acerca">
                 <h2>Sobre Mi</h2>
                 <p class="subtitulo">A continuación te contaré una breve descripción acerca de mi.</p>
@@ -103,7 +103,7 @@
             </div>
         </section>
 
-        <section class="proyectos">
+        <section id="proyectos" class="proyectos">
             <h2>Proyectos</h2>
             <p>En esta sección podrás encontrar los proyectos públicos que he desarrollado.</p>
             <div class="botones">
@@ -120,7 +120,7 @@
             <a class="most-mas" href="">Mostrar Mas <i class="bi bi-arrow-right"></i></a>
         </section>
 
-        <section class="contacto">
+        <section id="contacto" class="contacto">
             <h2>Contacto</h2>
             <p>Aqui te dejo un formulario para que llenes en caso que me quieras contactar por un trabajo.</p>
             <form>
@@ -136,33 +136,40 @@
     </main>
 
     <footer>
-        <div>
-            <img class="logo" src="http://via.placeholder.com/50" alt="Logo">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ut necessitatibus libero dolorem nobis asperiores odit voluptatem saepe illo hic, quasi odio, veniam consequuntur. Odio incidunt quis fugiat eveniet corrupti?</p>
-            <i class="bi bi-airplane-fill "></i>
-            <i class="bi bi-airplane-fill "></i>
+        <div class="cont-logo">
+            <img class="logo" src="img/logo2.png" alt="Logo">
+            <p>Aquí te dejo nuevamente mis redes para que puedas acceder y contactarme!</p>
+            <a href="https://www.instagram.com/laurobles03" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.github.com/lautirobles" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.x.com/lautarorobless" target="_blank"><i class="bi bi-twitter"></i></a>
         </div>
-        <div>
-            <a href="">Inicio</a>
-            <a href="">Servicios</a>
-            <a href="">Sobre mi</a>
-            <a href="">Proyectos</a>
-            <a href="">Contacto</a>
+        <div class="cont-enlaces">
+            <a href="#inicio"><h2>Inicio</h2></a>
+            <a href="#servicios"><p>Servicios</p></a>
+            <a href="#acerca"><p>Sobre mi</p></a>
+            <a href="#proyectos"><p>Proyectos</p></a>
+            <a href="#contacto"><p>Contacto</p></a>
         </div>
-        <div>
+        <div class="cont-serv">
             <h2>Servicios</h2>
             <p>Diseño de paginas</p>
             <p>Diseño de paginas</p>
             <p>Diseño de paginas</p>
         </div>
-        <div>
+        <div class="cont-contacto">
             <h2>Info de contacto</h2>
-            <i class="bi bi-airplane-fill "></i>
-            <p>+54 111 1111111</p>
-            <i class="bi bi-airplane-fill "></i>
-            <p>Córdoba, Argentina</p>
-            <i class="bi bi-airplane-fill "></i>
-            <p>latiroblesgmail.com</p>
+            <div class="numero">
+                <i class="bi bi-telephone"></i>
+                <p>+54 111 1111111</p>
+            </div>
+            <div class="ubi">
+                <i class="bi bi-geo-alt"></i>
+                <p>Córdoba, Argentina</p>
+            </div>
+            <div class="mail">
+                <i class="bi bi-envelope"></i>
+                <p>latirobles@gmail.com</p>
+            </div>
         </div>
 
     </footer>

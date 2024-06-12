@@ -16,6 +16,10 @@
     font-family: acumin-pro;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +41,7 @@ header{
     border-radius: 20px;
     margin: 1.5em 0;
     background-color: var(--primary-color);
-    
+
 }
 
 nav{
@@ -509,3 +513,84 @@ form input{
     border: 1px solid black;
 }
 
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+footer h2{
+    color: var(--font-white);
+}
+
+footer p{
+    color: var(--font-color);
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.cont-logo{
+    flex: 2;
+    margin: 3em;
+}
+
+.logo{
+    width: 2.5em;
+}
+
+.cont-logo a{
+    margin: 0 .5em;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #7a35c4;
+    color: var(--font-color);
+    transition: .5s border;
+}
+
+.cont-logo a:hover{
+    border: 1px solid black;
+}
+
+.cont-logo p{
+    margin: 2em 0;
+}
+
+.cont-enlaces{
+    flex: 1;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-serv{
+    flex: 1;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-contacto{
+    flex: 1;
+    margin: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-contacto h2{
+    width: 100%;
+}
+
+.numero p, .ubi p, .mail p{
+    display: inline-block;
+}
