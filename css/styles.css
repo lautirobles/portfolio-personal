@@ -138,44 +138,12 @@ main{
 }
 
 .hero img{
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 1em 0 0 0;
     filter: drop-shadow(0 0 .75rem var(--font-white));
 }
 
-.hero .caja1{
-    text-align: center;
-    color: var(--font-white);
-    width: 9vw;
-    height: 8vh;
-    font-size: 1.3em;
-    line-height: 120%;
-    padding: 1em;
-    background: #8647c9;
-    border-radius: 10px;
-    box-shadow: -1px -1px 1px var(--font-white);
-    rotate: 345deg;
-    position: absolute;
-    bottom: 0;
-    left: 20vw;
-}
-
-.hero .caja2{
-    text-align: center;
-    color: var(--font-white);
-    width: 9vw;
-    height: 8vh;
-    font-size: 1.3em;
-    line-height: 120%;
-    padding: 1em;
-    background: #8647c9;
-    border-radius: 10px;
-    box-shadow: -1px -1px 1px var(--font-white);
-    rotate: 15deg;
-    position: absolute;
-    bottom: 35vh;
-    right: 20vw;
-    
-}
 /* FIN DEL HERO */
 
 
@@ -202,6 +170,7 @@ main{
 }
 
 .cajas-servicios{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -209,7 +178,6 @@ main{
 
 .serv{
     flex: 1;
-    height: 30vh;
     padding: 4em 0;
     margin: 2em;
     border-radius: 15px;
@@ -482,6 +450,10 @@ main{
     flex-wrap: wrap;
 }
 
+form{
+    width: 100%;
+}
+
 form input{
     width: 40%;
     height: 5vh;
@@ -512,7 +484,9 @@ form input{
 .bot-enviar:hover{
     border: 1px solid black;
 }
+/* FIN DE CONTACTO */
 
+/* INICIO FOOTER */
 footer{
     width: 100%;
     display: flex;
